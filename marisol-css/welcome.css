@@ -66,3 +66,14 @@ body {
 a {
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+
+    #bem-vinda-img {
+      width: 70%;
+    }
+
+    .container h1 {
+        font-size: 85px;
+    }
+  }
