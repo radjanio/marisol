@@ -1,6 +1,5 @@
 body {
-    background-image: url('/marisol-img/art.jpg');
-    background-repeat: repeat;
+    background-color: #ff5a5a;
     font-family: "Allison", cursive;
     font-weight: 400;
     font-style: normal;
@@ -31,16 +30,16 @@ body {
 
 @keyframes colorChange {
     0% {
-        color: #ffeb96;
+        color: #98ff7c;
     }
     30% {
-        color: #73b8e6;
+        color: #ffeb96;
     }
     60% {
-        color: #fffcee;
+        color: #0084ff;
     }
     75% {
-        color: #0b2f5a;
+        color: #00ff40;
     }
     100% {
         color: #ffeb96;
@@ -51,9 +50,9 @@ body {
     font-family: "Allison", cursive;
     font-weight: 400;
     font-style: normal;
-    background-color: #ffeb96;
+    background-color: #FF0000;
     border: none;
-    color: black;
+    color: #00ff5e;
     padding: 0 32px;
     text-align: center;
     text-decoration: none;
@@ -65,6 +64,89 @@ body {
 a {
     text-decoration: none;
 }
+
+.strawberry-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .strawberry {
+    width: 50px;
+    height: 50px;
+    background: url('/marisol-icons/strawberry.png') no-repeat center center / contain;
+    position: absolute;
+    animation: float 5s infinite;
+  }
+  
+  .strawberry:nth-child(1) {
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+  }
+  
+  .strawberry:nth-child(2) {
+    top: 30%;
+    left: 50%;
+    animation-delay: 1s;
+  }
+  
+  .strawberry:nth-child(3) {
+    top: 50%;
+    left: 70%;
+    animation-delay: 2s;
+  }
+  
+  .strawberry:nth-child(4) {
+    top: 70%;
+    left: 30%;
+    animation-delay: 3s;
+  }
+  
+  .strawberry:nth-child(5) {
+    top: 90%;
+    left: 60%;
+    animation-delay: 4s;
+  }
+  
+  @keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+  }
+  
+  
+  .strawberry-container {
+    position: relative;
+    height: 100px;
+  }
+  
+  .strawberry {
+    width: 80px;
+    height: 80px;
+    background: url('/marisol-icons/strawberry.png') no-repeat center center / contain;
+    position: absolute;
+    top: 0;
+    animation: float 5s infinite;
+  }
+  
+  @keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+  }
 
 @media (max-width: 768px) {
 
