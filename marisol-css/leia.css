@@ -120,6 +120,7 @@ p {
 
     p {
         font-size: 1em; /* Reduz o tamanho do texto em telas menores */
+        width: 380px;
     }
 
     .menu {
